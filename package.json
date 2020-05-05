@@ -1,6 +1,6 @@
 {
     "name": "gatsby-source-discourse-topic-list",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Source topic lists from the Discourse discussion forum platform and transform it into Gatsby nodes.",
     "main": "index.js",
     "author": "Kristofer Lund",
