@@ -1,35 +1,39 @@
 {
-    "name": "gatsby-source-discourse-topic-list",
-    "version": "0.0.1",
-    "description": "Source topic lists from the Discourse discussion forum platform and transform it into Gatsby nodes.",
-    "main": "index.js",
-    "author": "Kristofer Lund",
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kristoferlund/gatsby-source-discourse-topic-list"
-    },
-    "keywords": [
-        "gatsby",
-        "gatsby-plugin",
-        "discourse",
-        "source",
-        "api",
-        "json",
-        "image",
-        "cache"
-    ],
-    "scripts": {
-        "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
-        "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
-        "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
-    },
-    "dependencies": {
-        "gatsby-source-filesystem": "^2.3.1",
-        "node-fetch": "^2.3.0",
-        "uuid": "^3.3.2"
-    },
-    "devDependencies": {
-        "generate-changelog": "^1.7.1"
-    }
+  "name": "gatsby-source-discourse-topic-list",
+  "version": "0.0.1",
+  "description": "Source topic lists from the Discourse discussion forum platform and transform it into Gatsby nodes.",
+  "main": "index.js",
+  "author": "Kristofer Lund",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristoferlund/gatsby-source-discourse-topic-list.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "discourse",
+    "source",
+    "api",
+    "json",
+    "image",
+    "cache"
+  ],
+  "scripts": {
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
+  },
+  "dependencies": {
+    "gatsby-source-filesystem": "^2.3.1",
+    "node-fetch": "^2.3.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "generate-changelog": "^1.7.1"
+  },
+  "bugs": {
+    "url": "https://github.com/kristoferlund/gatsby-source-discourse-topic-list/issues"
+  },
+  "homepage": "https://github.com/kristoferlund/gatsby-source-discourse-topic-list#readme"
 }

@@ -64,7 +64,74 @@ options: {
 }
 ```
 
-See the [Discourse API documentation] for a full list of enpoints.
+See the [Discourse API documentation](https://docs.discourse.org/) for a full list of endpoints.
+
+### Example result
+
+Note the added `raw` field containing the full unprocessed post topic text. 
+
+```
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "string",
+      "avatar_template": "string"
+    }
+  ],
+  "topic_list": {
+    "can_create_topic": true,
+    "draft": {},
+    "draft_key": "string",
+    "draft_sequence": 0,
+    "for_period": "string",
+    "per_page": 0,
+    "topics": [
+      {
+        "id": 0,
+        "title": "string",
+        "fancy_title": "string",
+        "slug": "string",
+        "raw": "The full unprocessed topic text in markdown format", 
+        "posts_count": 0,
+        "reply_count": 0,
+        "highest_post_number": 0,
+        "image_url": {},
+        "created_at": "string",
+        "last_posted_at": "string",
+        "bumped": true,
+        "bumped_at": "string",
+        "unseen": true,
+        "last_read_post_number": 0,
+        "unread": 0,
+        "new_posts": 0,
+        "pinned": true,
+        "unpinned": {},
+        "visible": true,
+        "closed": true,
+        "archived": true,
+        "notification_level": 0,
+        "bookmarked": true,
+        "liked": true,
+        "views": 0,
+        "like_count": 0,
+        "has_summary": true,
+        "archetype": "string",
+        "last_poster_username": "string",
+        "category_id": 0,
+        "pinned_globally": true,
+        "posters": [
+          {
+            "extras": "string",
+            "description": "string",
+            "user_id": 0
+          }
+        ]
+      }
+    ]
+  }
+}
+```
 
 ## Multiple Sources? Multiple Instances!
 
